@@ -2,13 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>AngularSprinkle</title>
+  <title>Sprinkle - Sample Angular App with Native Web Components</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
   <app-root>Loading...</app-root>
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBYzOh34gGOndFBj4X9wRv5ru0naiCIXfs",
+      authDomain: "sprinkle-angular.firebaseapp.com",
+      databaseURL: "https://sprinkle-angular.firebaseio.com",
+      storageBucket: "sprinkle-angular.appspot.com",
+      messagingSenderId: "139747001277"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
 </html>
