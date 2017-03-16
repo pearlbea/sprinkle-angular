@@ -35,7 +35,7 @@ class PhotoCard extends HTMLElement {
     return `
     <style>
       @import 'https://code.getmdl.io/1.3.0/material.red-blue.min.css';
-      @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
       .image-card-image.mdl-card {
         position: relative;
         width: 384px;

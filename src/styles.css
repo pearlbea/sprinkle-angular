@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./material.red-blue.min.css";
+
+#loading {
+  font-size: 2em;
+  margin: 2em auto;
+  width: 80%;
+}
