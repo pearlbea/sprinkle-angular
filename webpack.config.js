@@ -40,9 +40,9 @@ module.exports = {
     "polyfills": [
       "./src/polyfills.ts",
       "./bower_components/fetch/fetch.js",
-      "./bower_components/custom-elements/custom-elements.min.js",
-      "./bower_components/shadydom/shadydom.min.js",
-      "./bower_components/webcomponentsjs/webcomponents-lite.min.js"
+      // "./bower_components/custom-elements/custom-elements.min.js",
+      // "./bower_components/shadydom/shadydom.min.js",
+      // "./bower_components/webcomponentsjs/webcomponents-lite.js"
     ],
     "scripts": [
       "./src/app/components/unsplash.js",

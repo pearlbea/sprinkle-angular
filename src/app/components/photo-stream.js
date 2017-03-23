@@ -7,10 +7,25 @@ class PhotoStream extends HTMLElement {
 
   connectedCallback() {
     this.initShadowDom();
-    this.getPhotos()
-      .then(photos => {
-        this.renderPhotos(photos);
-      });
+  }
+
+  static get observedAttributes() {
+    return ['client-id', 'collection-id'];
+  }
+
+  attributeChangedCallback(attr, oldValue, newValue) {
+    if (attr == 'client-id' || attr == 'collection-id') {
+      this.fetchPhotos();
+    }
+  }
+
+  fetchPhotos() {
+    if (this.clientId && this.collectionId) {
+      this.getPhotos()
+        .then(photos => {
+          this.renderPhotos(photos);
+        });
+    }
   }
 
   initShadowDom() {
@@ -19,11 +34,11 @@ class PhotoStream extends HTMLElement {
   }
 
   get clientId() {
-    this.getAttribute('client-id');
+    return this.getAttribute('client-id');
   }
 
   get collectionId() {
-    this.getAttribute('collection-id');
+    return this.getAttribute('collection-id');
   }
 
   get api() {

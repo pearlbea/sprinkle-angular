@@ -43,7 +43,7 @@ class AboutCard extends HTMLElement {
           </a>
         </div>
       </div>`;
-    }
   }
+}
 
-  customElements.define('about-card', AboutCard);
+customElements.define('about-card', AboutCard);
