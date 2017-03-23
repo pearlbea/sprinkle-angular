@@ -212,7 +212,7 @@ module.exports = {
         "favicon.ico"
       ],
       "globOptions": {
-        "cwd": "/Users/pearllatteier/projects/ANGULAR/angular-sprinkle/src",
+        "cwd": "./src",
         "dot": true,
         "ignore": "**/.gitkeep"
       }
